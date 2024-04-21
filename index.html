@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            margin-top: 150px;
+            margin-left: 30%;
+
+        }
+
+        body {
+            background-color: grey;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <h1 style="color: blue;">NET PAY CALCULATOR</h1>
+        <P>Enter your gross salary below and benefits to calculate your net pay</P>
+        <form id="my_form">
+            <label>Basic salary </label>
+            <input type="text" name="fname" id="bsalary">
+            <label>Benefits</label>
+            <input type="text" name="lname" id="benefit">
+            <input type="submit" value="calculate">
+        </form>
+        <table id="my_table" border="2" style="width: 700px; height: 480px; border: solid;">
+            <th>Description</th>
+            <th>Results</th>
+            <tr>
+                <td>Gross salary</td>
+                <td id="Gross_salary"></td>
+            </tr>
+            <tr>
+                <td>NSSF</td>
+                <td id="NSSF"></td>
+            </tr>
+            <tr>
+                <td>NHDF</td>
+                <td id="NHDF"></td>
+            </tr>
+            <tr>
+                <td>Final payee</td>
+                <td id="Final_payee"></td>
+            </tr>
+            <tr>
+                <td>NHIF</td>
+                <td id="NHIF"></td>
+            </tr>
+            <tr>
+                <td>Taxable income</td>
+                <td id="Taxable_income"></td>
+            </tr>
+            <tr>
+                <td>Net pay</td>
+                <td id="Net_pay"></td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
